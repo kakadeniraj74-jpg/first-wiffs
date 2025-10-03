@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Whiffs</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">First Whiffs</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="login2.html">Login</a>
+    </nav>
+    <div class="cart-icon" onclick="toggleCart()">🛒</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Discover Your Signature Scent</h1>
+    <p>Luxury perfumes for every occasion.</p>
+    <button onclick="alert('Start Shopping!')">Shop Now</button>
+  </section>
+
+  <!-- Products -->
+  <section class="products">
+    <h2>Our Collection</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/51h+3KRCLiL._UF1000,1000_QL80_.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 7000px; height: 150px; margin: 0px; width: 150px;" alt="Buy Rasasi Hawas Eau De Parfum 100ml For Men | Long Lasting Perfume |  Luxury Scent | Alluring Fragrance Online at Low Prices in India - first wiffs.in" jsname="kn3ccd">
+        <h3>RASASI HAWAS</h3>
+        <p>₹2000</p>
+        <button onclick="addToCart('RASASI HAWAS', 2000)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61AeHu0kW8L.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 870px; height: 150px; margin: 0px; width: 150px;" alt="Buy AHMED Kaaf For Men Long Lasting Eau De Parfum -100ml Online at Low  Prices in India - first wiffs.in" jsname="kn3ccd">
+        <h3>AHMED AL MAGHRIBI KAAF</h3>
+        <p>₹2100</p>
+        <button onclick="addToCart('AHMED AL MAGHRIBI KAAF', 2100)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/51saaYCljkL._UF1000,1000_QL80_.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 667px; height: 150px; margin: 0px; width: 150px;" alt="Dior Sauvage Eau De Toilette For Men, 100ml" jsname="kn3ccd">
+        <h3>DIOR SAUVAGE</h3>
+        <p>₹10000</p>
+        <button onclick="addToCart('DIOR SAUVAGE', 10000)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71MFnm+93YL._UF350,350_QL80_.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 350px; height: 150px; margin: 0px; width: 150px;" alt="Mancera INSTANT CRUSH Edp 120ml" jsname="kn3ccd">
+        <h3>MANCERA INSTANT CRUSH</h3>
+        <p>₹7000</p>
+        <button onclick="addToCart('MANCERA INSTANT CRUSH', 7000)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-content">
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+      <p id="cartTotal">Total: ₹0</p>
+      <button onclick="checkout()">Checkout</button>
+      <button onclick="toggleCart()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
